@@ -63,6 +63,7 @@ export default function Home() {
               description: item.weather[0].description,
               windSpeed: item.wind.speed,
             };
+            
           }
         });
     

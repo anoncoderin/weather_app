@@ -13,6 +13,7 @@ interface Props {
 }
 
 const WeatherForecast: React.FC<Props> = ({ forecastData }) => {
+  
   const groupedForecast = forecastData.reduce((acc: any, forecast: PredictWeather) => {
     const date = forecast.date.split(" ")[0]; 
     if (!acc[date]) {
@@ -29,7 +30,7 @@ const WeatherForecast: React.FC<Props> = ({ forecastData }) => {
         <div key={date}>
           <h2>{date}</h2>
           <ul>
-            {forecasts.map((forecast: PredictWeather, index: number) => (
+            {(forecasts as PredictWeather[]).map((forecast: PredictWeather, index: number) => (
               <li key={index}>
                 <div>Date: {forecast.date}</div>
                 <div>Temperature: {forecast.temperature}°C</div>
