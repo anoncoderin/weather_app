@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 363.67 131.1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        font-family: Poppins-Medium, Poppins;
+        font-size: 48px;
+        font-weight: 500;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1=".01" y1="55.21" x2="110.4" y2="55.21" gradientTransform="translate(97.01 -10.73) rotate(77.37)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcee21"/>
+      <stop offset=".66" stop-color="#f7931e"/>
+      <stop offset="1" stop-color="#f15a24"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <circle class="cls-1" cx="55.21" cy="55.21" r="55.19"/>
+      <text class="cls-2" transform="translate(35.64 103.17)"><tspan x="0" y="0">Weather.com</tspan></text>
+    </g>
+  </g>
+</svg>
