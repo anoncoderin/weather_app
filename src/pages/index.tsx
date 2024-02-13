@@ -59,11 +59,13 @@ export default function Home() {
             groupedForecast[date] = {
               date: date,
               temperature: item.main.temp.toFixed(1),
-              weather: item.weather[0].main,
+              main: item.weather[0].main,
               description: item.weather[0].description,
               windSpeed: item.wind.speed,
+              id: item.weather[0].id,
+              icon: item.weather[0].icon,
+              dt_txt: item.dt_txt,
             };
-            
           }
         });
     
@@ -111,7 +113,7 @@ export default function Home() {
       ) : (
         <div>Data not available</div>
       )}
-      <Forecast data={forecastWeather} getWeatherImage={getWeatherImage} />
+      <Forecast data={forecastWeather}  />
      
       <Footer />
     </div>

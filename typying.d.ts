@@ -15,12 +15,12 @@ interface ICurrentProps {
 interface PredictWeather {
   date: string;
   temperature: string;
-  weather: {
+ 
     id: number;
     main: string;
     description: string;
     icon: string;
-  };
+ 
   windSpeed: string;
   dt_txt: string; 
 }

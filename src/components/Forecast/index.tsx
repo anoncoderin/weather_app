@@ -3,9 +3,13 @@ import Image from "next/image";
 interface PredictWeather {
   date: string;
   temperature: string;
-  weather: string;
-  description: string;
+  id: number;
+    main: string;
+    description: string;
+    icon: string;
+  
   windSpeed: string;
+  dt_txt: string;
 }
 
 export default function Forecast(props: { data: PredictWeather[] }) {
@@ -43,10 +47,10 @@ export default function Forecast(props: { data: PredictWeather[] }) {
                 
                 <div className="text-left">
                   <span className="block mb-1 font-bold text-blue-500">Weather: </span>
-                  <span>{weather.weather}</span>
+                  <span>{weather.main}</span>
                 </div>
                 <img
-                  src={getWeatherImage(weather.weather)}
+                  src={getWeatherImage(weather.main)}
                   className="w-10 h-10"
                   alt="weather-icon"
                 />
